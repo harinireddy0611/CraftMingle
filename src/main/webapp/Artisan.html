@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Artisans |</title>
+<link rel="stylesheet" type="text/css" href="Artisan.css">
+</head>
+<body>
+<h1>Welcome to CraftMingle</h1>
+<p>Lets Collaborate and work together</p>
+<div class="form-container">
+      <form class="form" action="Artisan.jsp" method="post">
+        <div class="form-group">
+          <label for="name">Artisan name</label>
+          <input name="a1" type="text" id="name" required="">
+        </div>
+        <div class="form-group">
+          <label for="pname">Product name</label>
+          <input name="a2" type="text" id="pname" required="">
+        </div>
+        <div class="form-group">
+          <label for="description">Describe the product</label>
+          <textarea required="" cols="50" rows="10" name="a3" id="description">          </textarea>
+        </div>
+        <div class="form-group">
+          <label for="cate">Category</label>
+          <input name="a4" type="text" id="cate" required="">
+        </div>
+        <div class="form-group">
+          <label for="price">Price</label>
+          <input name="a5" type="number" id="price" required="">
+        </div>
+        <div class="form-group">
+          <label for="img">Image URL</label>
+          <input name="a6" type="text" id="img" required="">
+        </div>
+        <button type="submit" class="form-submit-btn">Add Item</button>
+      </form>
+    </div>
+</body>
+</html>

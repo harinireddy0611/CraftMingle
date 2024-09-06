@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="Login.css" />
+    <title>Document</title>
+  </head>
+  <body>
+  <div>
+  <div class="container">
+	<div class="tabs">
+		<input type="radio" id="radio-1" name="tabs" checked="">
+		<label class="tab" for="radio-1">User</label>
+		<input type="radio" id="radio-2" name="tabs">
+		<label class="tab" for="radio-2">Artisan</label>
+		<span class="glider"></span>
+	</div>
+</div>
+  
+  
+  <div class="maindiv">
+    <h1 class="he1">LOGIN / SIGNUP</h1>
+    <div id="login-form">
+      <div class="form-box">
+        <form class="form" action="Login.jsp" method="post">
+          <span class="title">Login</span>
+          <span class="subtitle">Login to your account with your email.</span>
+          <div class="form-container">
+            <input type="email" class="input" placeholder="Email" name="l1" />
+            <input
+              type="password"
+              class="input"
+              placeholder="Password"
+              name="l2"
+            />
+          </div>
+          <button>Login</button>
+        </form>
+        <div class="form-section">
+          <p>
+            Doesn't have an account?
+            <a href="javascript:void(0);" onclick="toggleForm('signup-form')"
+              >Sign up</a
+            >
+          </p>
+        </div>
+      </div>
+    </div>
+    <div id="signup-form" style="display: none">
+      <div class="form-box">
+        <form class="form" action="Create.jsp" method="post">
+          <span class="title">Sign up</span>
+          <span class="subtitle">Create a free account with your email.</span>
+          <div class="form-container">
+            <input
+              type="text"
+              class="input"
+              placeholder="Full Name"
+              name="s1"
+            />
+            <input type="email" class="input" placeholder="Email" name="s2" />
+            <input
+              type="password"
+              class="input"
+              placeholder="Password"
+              name="s3"
+            />
+          </div>
+          <button>Sign up</button>
+        </form>
+        <div class="form-section">
+          <p>
+            Have an account?
+            <a href="javascript:void(0);" onclick="toggleForm('login-form')"
+              >Log in</a
+            >
+          </p>
+        </div>
+      </div>
+    </div>
+    </div> 
+    </div>
+    <script>
+      function toggleForm(formId) {
+        document.getElementById("login-form").style.display = "none";
+        document.getElementById("signup-form").style.display = "none";
+
+        document.getElementById(formId).style.display = "block";
+      }
+    </script>
+  </body>
+</html>

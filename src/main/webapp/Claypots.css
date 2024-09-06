@@ -1,0 +1,83 @@
+@charset "ISO-8859-1";
+body {
+  text-align: center;
+  background-color: #ededed;
+}
+.potscollection {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+  margin-top: 50px;
+  flex-wrap: wrap;
+}
+.pots {
+  height: 450px;
+  width: 350px;
+  border-radius: 20px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
+    rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+  padding: 20px;
+}
+.pots img {
+  object-fit: contain;
+  height: 80%;
+  width: 300px;
+  margin-top: -60px;
+}
+.pots h3 {
+  font-size: 30px;
+  margin-top: -80px;
+}
+.pots p {
+  font-size: 20px;
+  margin-top: -20px;
+}
+.input {
+  width: 70px;
+  height: 40px;
+  background-color: cadetblue;
+  color: white;
+  border-radius: 5px;
+  border-style: none;
+  font-size:15px;
+  padding:0 10px;
+  outline:none;
+}
+.input::placeholder{
+	color: white;
+	padding:0 2px;
+}
+.vcart{
+	margin-top:100px;
+	width:110px;
+}
+.add{
+	margin-top:8px;
+	width:150px;
+	padding:20px;
+	heigth:30px;
+}
+.icon{
+	font-size:25px;
+	color:tomato;
+	margin:0px 20px;
+	cursor:pointer;
+}
+a{
+	text-decoration:none;
+	color:white;
+}
+.a{
+	
+	background-color:cadetblue;
+	width:80px;
+	color:white;
+	padding:20px;
+	border-radius:5px;
+}
+.but{
+	display:flex;
+	flex-direction:row;
+	gap:30px
+}

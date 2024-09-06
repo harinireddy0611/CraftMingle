@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="Claypots.css">
+    <title>Claypots</title>
+  </head>
+  <body>
+  <div class="items">
+    <h1 style="font-size: 40px">CLAY POTS COLLECTION</h1>
+    <div class="potscollection">
+    <form action="Cart.jsp" method="post" class="potscollection">
+      <div class="pots">
+        <img
+          src="https://cdn.pixabay.com/photo/2023/05/30/17/39/clay-pot-8029276_1280.jpg"
+          alt=""
+          class="img"
+        />
+        <h3 name="productname">Product1</h3>
+        <p name="artisanname">By Artisan name</p>
+        <div style="display:flex;justify-content:center;align-items:center">
+        <i class="fa-solid fa-circle-minus icon" onclick="decrement(0)"></i>
+        <input type="number" name="Product1" placeholder="quantity" class="input"/>
+        <i class="fa-solid fa-circle-plus icon" onclick="increment(0)"></i>
+        </div>
+        <button class="input add" onSubmit="">Add to cart</button>
+      </div>
+
+      <div class="pots">
+        <img
+          src="https://cdn.pixabay.com/photo/2013/08/02/16/27/bowl-169435_1280.jpg"
+          alt=""
+          class="img"
+        />
+        <h3 name="productname">Product2</h3>
+        <p name="artisanname">By Artisan name</p>
+        
+        <div style="display:flex;justify-content:center;align-items:center">
+        <i class="fa-solid fa-circle-minus icon" onclick="decrement(0)"></i>
+        <input type="number" name="Product1" placeholder="quantity" class="input"/>
+        <i class="fa-solid fa-circle-plus icon" onclick="increment(0)"></i>
+        </div>
+      </div>
+
+      <div class="pots">
+        <img
+          src="https://cdn.pixabay.com/photo/2022/12/03/11/01/clay-pots-7632457_1280.jpg"
+          alt=""
+          class="img"
+        />
+        <h3 name="productname">Product3</h3>
+        <p name="artisanname">By Artisan name</p>
+        
+        <div style="display:flex;justify-content:center;align-items:center">
+        <i class="fa-solid fa-circle-minus icon" onclick="decrement(0)"></i>
+        <input type="number" name="Product1" placeholder="quantity" class="input"/>
+        <i class="fa-solid fa-circle-plus icon" onclick="increment(0)"></i>
+        </div>
+      </div>
+      <div class="pots">
+        <img
+          src="https://cdn.pixabay.com/photo/2016/04/12/05/06/claypots-1323747_1280.jpg"
+          alt=""
+          class="img"
+        />
+        <h3 name="productname">Product4</h3>
+        <p name="artisanname">By Artisan name</p>
+        <div style="display:flex;justify-content:center;align-items:center">
+        <i class="fa-solid fa-circle-minus icon" onclick="decrement(0)"></i>
+        <input type="number" name="Product1" placeholder="quantity" class="input"/>
+        <i class="fa-solid fa-circle-plus icon" onclick="increment(0)"></i>
+        </div>
+      </div>
+    </div>
+    <input type="submit" value="View cart" class="input vcart">
+</form>
+<script>
+function increment(x){
+	let c=document.getElementsByClassName("input")[x];
+	c.value=Number(c.value)+1;
+}
+function decrement(x){
+	let c=document.getElementsByClassName("input")[x];
+	if(Number(c.value)>0){
+		c.value=Number(c.value)-1;
+	}
+}
+</script>
+    
+  <script src="https://kit.fontawesome.com/acbd9f1f58.js" crossorigin="anonymous"></script>
+    </div>
+  </body>
+</html>

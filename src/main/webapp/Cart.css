@@ -1,0 +1,88 @@
+@charset "ISO-8859-1";
+/* navbar */
+
+.navbar {
+  background-color: rgba(0, 0, 0, 0.144);
+  width: 100%;
+  overflow: hidden;
+  padding: 0 20px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  height: 60px;
+  position: fixed;
+}
+
+.nav a {
+  color: white;
+  text-decoration: none;
+  padding: 14px 30px;
+  font-size: 25px;
+  cursor: pointer;
+}
+.nav a:hover {
+  color: purple;
+}
+.nav .active {
+  color: purple;
+}
+
+body {
+  text-align: center;
+  background-color: #ededed;
+  flex-wrap:wrap;
+}
+.potscollection {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+  margin-top: 50px;
+  flex-wrap: wrap;
+}
+.pots {
+  height: 200px;
+  width: 400px;
+  border-radius: 20px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
+    rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+  padding: 20px;
+  display:flex;
+  flex-direction:row;
+  align-items:center;
+  gap:50px;
+  text-align:left;
+  line-height:35px;
+}
+.pots img {
+  object-fit: contain;
+  height:100px;
+width:150px;
+
+  
+}
+.pots h3 {
+  font-size: 30px;
+}
+.pots p {
+  font-size: 20px;
+  margin-top: -20px;
+}
+a{
+	text-decoration:none;
+	color:white;
+}
+.a{
+	
+	background-color:cadetblue;
+	width:150px;
+	color:white;
+	padding:20px;
+	border-radius:5px;
+}
+.but{
+	display:flex;
+	flex-direction:row;
+	gap:30px
+}

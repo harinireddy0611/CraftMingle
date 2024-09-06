@@ -1,0 +1,140 @@
+@charset "ISO-8859-1";
+@import url("https://fonts.googleapis.com/css2?family=EB+Garamond:ital@0;1&family=Italiana&family=Klee+One&family=Poppins:wght@400;500;600;800&display=swap");
+* {
+  font-family: poppins;
+  font-weight: 600;
+}
+body {
+  margin: 0;
+  padding: 0;
+  /* font-family: "Arial", sans-serif; */
+  background-color: #ededed;
+}
+
+.video-background {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+  z-index: -1;
+}
+.landing {
+  height: 100vh;
+  overflow: hidden;
+  color: white;
+  position: relative;
+}
+
+.content {
+  z-index: 10000;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+  width: 60%;
+  line-height: 40px;
+  margin-top: 195px;
+  margin-left: 350px;
+  position: absolute;
+  font-weight: 600;
+}
+.content h1 {
+  font-size: 130px;
+}
+.content p {
+  font-size: 30px;
+}
+
+/* navbar */
+
+.navbar {
+  background-color: rgba(0, 0, 0, 0.144);
+  width: 100%;
+  overflow: hidden;
+  padding: 0 20px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  height: 60px;
+  position: fixed;
+  z-index: 1000;
+}
+
+.nav a {
+  color: white;
+  text-decoration: none;
+  padding: 14px 30px;
+  font-size: 25px;
+  cursor: pointer;
+}
+.nav a:hover {
+  color: purple;
+}
+.nav .active {
+  color: purple; /* Style for the active link */
+}
+/*our collections*/
+.ourcollections {
+  height: 100vh;
+  margin-top: 100px;
+}
+.ourcollections h1 {
+  padding-left: 26px;
+  font-size: 45px;
+}
+.ourcollections hr {
+  width: 95%;
+}
+.collections {
+  display: flex;
+  flex-direction: row;
+  gap: 40px;
+  margin: 60px 40px;
+}
+.collections a {
+  text-decoration: none;
+}
+.colldiv {
+  background-size: cover;
+  width: 370px;
+  height: 400px;
+  border-radius: 20px;
+  font-family: poppins;
+  text-align: center;
+  cursor: pointer;
+  transition: 400ms;
+  color: white;
+  text-shadow: 2px 2px 3px black;
+  font-size: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.coll {
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+  background-color: rgba(0, 0, 0, 0.311);
+}
+.card1 {
+  background-image: url("https://cdn.pixabay.com/photo/2019/12/08/21/10/potter-4682257_1280.jpg");
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.card2 {
+  background-image: url("https://images.pexels.com/photos/10317106/pexels-photo-10317106.jpeg?auto=compress&cs=tinysrgb&w=600");
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.card3 {
+  background-image: url("https://images.pexels.com/photos/19632352/pexels-photo-19632352/free-photo-of-patterned-blankets-hanging-on-hooks-on-a-wall.jpeg?auto=compress&cs=tinysrgb&w=600");
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.card4 {
+  background-image: url("https://images.pexels.com/photos/102127/pexels-photo-102127.jpeg?auto=compress&cs=tinysrgb&w=600");
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.colldiv:hover > .colldiv:not(:hover) {
+  transition: all 0.5s;
+  filter: blur(2px);
+  transform: scale(0.9, 0.9);
+}
